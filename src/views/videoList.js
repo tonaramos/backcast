@@ -1,6 +1,6 @@
 var VideoListView = Backbone.View.extend({
 
-  el:'.list',
+  el:'.col-md-5',
 
   initialize: function() {
     this.render();
@@ -19,8 +19,8 @@ var VideoListView = Backbone.View.extend({
   
   renderVideo: function(video) {
     var videoView = new VideoListEntryView({model: video});
-    console.log('renderVideo: ', this);
-    this.$el.append(videoView.$el);
+    console.log('renderVideo: ', videoView);
+    this.$('.video-list').append(videoView.$el);
   },
 
   template: templateURL('src/templates/videoList.html')
