@@ -1,6 +1,6 @@
 var VideoListView = Backbone.View.extend({
 
-  el:'.col-md-5',
+  el:'.list',
 
   initialize: function() {
     this.render();
