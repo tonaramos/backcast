@@ -9,6 +9,7 @@ var VideoListView = Backbone.View.extend({
       // console.log(this);
       videoView(video);
     });
+    
   },
 
   render: function() {
