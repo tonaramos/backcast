@@ -17,8 +17,10 @@ var VideoListEntryView = Backbone.View.extend({
   },
 
   onTitleClick: function() {
+    //console.log('yo');
     this.model.select();
     // the target that we clicked to be rendered in playerView
+    
   },
   
   template: templateURL('src/templates/videoListEntry.html')
